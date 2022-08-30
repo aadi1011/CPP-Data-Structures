@@ -25,6 +25,21 @@ void traverse(struct node* head)
 	}
 }
 
+// Insert at the beginning of the list
+struct node* insert_beg(struct node* head)
+{
+    int n;
+    cout << "Enter data of new node: ";
+    cin >> n;
+    struct node* newnode = NULL;
+    newnode = (struct node*)malloc(sizeof(struct node*));
+    newnode->data = n;
+    newnode->link = NULL;
+    newnode->link = head;
+    head=newnode;
+    return head;
+}
+
 //main function
 int main()
 {
