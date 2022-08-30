@@ -11,6 +11,20 @@ struct node
 	struct node* link;
 };
 
+// Traverse the list
+void traverse(struct node* head)
+{
+	struct node* temp = head;
+	cout << endl;
+	while (temp != NULL)
+	{
+		//cout << "\nAddress: " << temp << endl;
+		//cout << "Value: " << temp->data << endl << endl;
+		cout << temp->data << " -> ";
+		temp = temp->link;
+	}
+}
+
 //main function
 int main()
 {
