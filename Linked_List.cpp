@@ -40,6 +40,29 @@ struct node* insert_beg(struct node* head)
     return head;
 }
 
+
+// Insert at a position in the list
+void pos_insert(struct node* head)
+{
+	int n, position;
+	cout << "Enter data of new node: ";
+	cin >> n;
+	cout << "Enter position to enter: ";
+	cin >> position;
+	struct node* temp = head;
+	struct node* newnode = NULL;
+	for (int i = 1; i < position - 1; i++)
+	{
+		temp = temp->link;
+	}	
+	newnode = (struct node*)malloc(sizeof(struct node*));
+	newnode->data = n;
+	newnode->link = NULL;
+	newnode->link = temp->link;
+	temp->link = newnode;
+}
+
+
 //main function
 int main()
 {
