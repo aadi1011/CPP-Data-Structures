@@ -40,7 +40,6 @@ struct node* insert_beg(struct node* head)
     return head;
 }
 
-
 // Insert at a position in the list
 void pos_insert(struct node* head)
 {
@@ -62,6 +61,23 @@ void pos_insert(struct node* head)
 	temp->link = newnode;
 }
 
+// Insert at the end of the list
+void insert_end(struct node* head)
+{
+    int n;
+    cout << "Enter data of new node: ";
+    cin >> n;
+    struct node* newnode = NULL;
+    newnode = (struct node*)malloc(sizeof(struct node*));
+    newnode->data = n;
+    newnode->link = NULL;
+    struct node* temp = head;
+    while (temp->link != NULL)
+    {
+        temp = temp->link;
+    }
+    temp->link = newnode;
+}
 
 //main function
 int main()
