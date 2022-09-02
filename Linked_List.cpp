@@ -79,6 +79,15 @@ void insert_end(struct node* head)
     temp->link = newnode;
 }
 
+//Delete from the beginning of the list
+struct node* delete_beg(struct node* head)
+{
+	struct node* temp = head;
+	head = head->link;
+	free(temp);
+	return head;
+}
+
 //main function
 int main()
 {
