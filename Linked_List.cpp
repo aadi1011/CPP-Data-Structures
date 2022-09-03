@@ -100,6 +100,23 @@ void delete_end(struct node* head)
 	free(temp->link);
 }
 
+//Delete from a position in the list
+void pos_delete(struct node* head)
+{
+	int position;
+	cout << "Enter position to delete: ";
+	cin >> position;
+	struct node* temp = head;
+	struct node* temp2 = temp;
+	for (int i = 1; i < position - 1; i++)
+	{
+		temp = temp->link;
+	}
+	temp2 = temp->link;
+	temp->link = temp2->link;
+	free(temp2);
+}
+
 //main function
 int main()
 {
