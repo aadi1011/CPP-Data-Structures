@@ -88,6 +88,18 @@ struct node* delete_beg(struct node* head)
 	return head;
 }
 
+//Delete from end of the list
+void delete_end(struct node* head)
+{
+	struct node* temp = head;
+	while (temp->link->link != NULL)
+	{
+		temp = temp->link;
+	}
+	temp->link = NULL;
+	free(temp->link);
+}
+
 //main function
 int main()
 {
