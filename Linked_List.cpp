@@ -117,6 +117,32 @@ void pos_delete(struct node* head)
 	free(temp2);
 }
 
+//Concatenate two lists
+void concat(struct node* head)
+{
+	struct node* head2 = NULL;
+	struct node* second2 = NULL;
+	struct node* third2 = NULL;
+	
+	head2 = (struct node*) malloc(sizeof(struct node));
+	second2 = (struct node*)malloc(sizeof(struct node));
+	third2 = (struct node*)malloc(sizeof(struct node));
+	
+	head2->data = 102;
+	head2->link = second2;
+	second2->data = 269;
+	second2->link = third2;
+	third2->data = 420;
+	third2->link = NULL;
+	
+	struct node* temp = head;
+	while (temp->link != NULL)
+	{
+		temp = temp->link;
+	}
+	temp->link = head2;
+}
+
 //main function
 int main()
 {
