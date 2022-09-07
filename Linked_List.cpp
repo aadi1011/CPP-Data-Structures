@@ -143,6 +143,22 @@ void concat(struct node* head)
 	temp->link = head2;
 }
 
+//Reverse the list
+void reverse(struct node* head)
+{
+	struct node* temp = head;
+	struct node* next = NULL;
+	struct node* prev = NULL;
+	while (temp != NULL)
+	{
+		next = temp->link;
+		temp->link = prev;
+		prev = temp;
+		temp = next;
+	}
+	head = prev;
+}
+
 //main function
 int main()
 {
