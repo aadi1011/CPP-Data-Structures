@@ -159,6 +159,30 @@ void reverse(struct node* head)
 	head = prev;
 }
 
+//Search an element in the list
+void search(struct node* head)
+{
+	int n;
+	cout<<"Enter element to search: ";
+	cin>>n;
+	struct node* temp = head;
+	int pos=1;
+	while(temp != NULL)
+	{
+		if(temp->data == n)
+		{
+			cout<<"\nElement found at position: "<<pos<<endl;
+			break;
+		}
+		temp = temp->link;
+		pos++;
+	}
+	if(temp == NULL)
+	{
+		cout<<"\nElement does not exist!"<<endl;
+	}
+}
+
 //main function
 int main()
 {
