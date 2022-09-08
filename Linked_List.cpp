@@ -183,6 +183,8 @@ void search(struct node* head)
 	}
 }
 
+//Menu function
+
 //main function
 int main()
 {
