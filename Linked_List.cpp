@@ -184,6 +184,82 @@ void search(struct node* head)
 }
 
 //Menu function
+void menu(struct node* head)
+{
+	int choice;
+	
+	cout<<"\n\n1. Traverse the list"<<endl;
+	cout<<"2. Insert at the beginning of the list"<<endl;
+	cout<<"3. Insert at a position in the list"<<endl;
+	cout<<"4. Insert at the end of the list"<<endl;
+	cout<<"5. Delete from the beginning of the list"<<endl;
+	cout<<"6. Delete from the end of the list"<<endl;
+	cout<<"7. Delete from a position in the list"<<endl;
+	cout<<"8. Concatenate two lists"<<endl;
+	cout<<"9. Reverse a list"<<endl;
+	cout<<"10. Search an element in list"<<endl;
+	cout<<"11. Exit"<<endl;
+	cout<<"Enter choice: ";
+	cin>>choice;
+
+	if (choice==1)
+	{
+		traverse(head);
+	}
+	else if (choice==2)
+	{
+		head = insert_beg(head);
+		traverse(head);
+	}
+	else if (choice==3)
+	{
+		pos_insert(head);
+		traverse(head);
+	}
+	else if (choice==4)
+	{
+		insert_end(head);
+		traverse(head);
+	}
+	else if (choice==5)
+	{
+		head = delete_beg(head);
+		traverse(head);
+	}
+	else if (choice==6)
+	{
+		delete_end(head);
+		traverse(head);
+	}
+	else if (choice==7)
+	{
+		pos_delete(head);
+		traverse(head);
+	}
+	else if (choice==8)
+	{
+		concat(head);
+		traverse(head);
+	}
+	else if (choice==9)
+	{
+		reverse(head);
+		traverse(head);
+	}
+	else if(choice==10)
+	{
+		search(head);
+	}
+	else if (choice==11)
+	{
+		exit(0);
+	}
+	else
+	{
+		cout<<"\nInvalid choice"<<endl;
+	}
+	menu(head);
+}
 
 //main function
 int main()
