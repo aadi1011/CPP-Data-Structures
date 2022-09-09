@@ -252,13 +252,13 @@ void menu(struct node* head)
 	}
 	else if (choice==11)
 	{
-		exit(0);
+		exit(0); //Exits the code al;-together.
 	}
 	else
 	{
 		cout<<"\nInvalid choice"<<endl;
 	}
-	menu(head);
+	menu(head);	// Loop to save data
 }
 
 //main function
