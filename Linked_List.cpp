@@ -252,7 +252,7 @@ void menu(struct node* head)
 	}
 	else if (choice==11)
 	{
-		exit(0); //Exits the code al;-together.
+		exit(0); //Exits the code.
 	}
 	else
 	{
