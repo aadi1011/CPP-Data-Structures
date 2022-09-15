@@ -27,12 +27,15 @@ int main()
     third=(struct node*)malloc(sizeof(struct node));
 
     // Assigning values to nodes
+        //First (head) value
     head->prev=NULL;
     head->data=45;
     head->next=second;
+        //second value    
     second->prev=head;
     second->data=80;
     second->next=third;
+        //third value
     third->prev=second;
     third->data=95;
     third->next=NULL;
