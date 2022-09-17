@@ -4,7 +4,7 @@
 
 A C++ menu driven program to create/handle single linked lists and doubly linked lists.
 
-<b>Features:</b>
+<b>Features: (both types of lists)</b>
 <ul>
 <li>Traversing the list</li>
 <li>Insert additional data nodes at: <ul><li>Beginning of list</li><li>End of List</li><li>At specified postion in list</li></ul></li>
