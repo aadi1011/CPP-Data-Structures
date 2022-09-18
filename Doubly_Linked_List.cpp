@@ -12,6 +12,24 @@ struct node
     struct node *prev;
 };
 
+void menu(struct node* head)
+{
+    //Creating a menu
+    int choice;
+    cout<<"\n\n1. Traverse the list"<<endl;
+    cout<<"2. Insert at the beginning"<<endl;
+    cout<<"3. Insert at the end"<<endl;
+    cout<<"4. Insert at a position"<<endl;
+    cout<<"5. Delete at the beginning"<<endl;
+    cout<<"6. Delete at the end"<<endl;
+    cout<<"7. Delete at a position"<<endl;
+    cout<<"8. Concatenate two lists"<<endl;
+    cout<<"9. Exit"<<endl;
+    
+    //Taking input from user
+    cout<<"Enter your choice: ";
+    cin>>choice;
+
 
 
 // Main function
