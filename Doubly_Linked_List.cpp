@@ -29,7 +29,49 @@ void menu(struct node* head)
     //Taking input from user
     cout<<"Enter your choice: ";
     cin>>choice;
-
+    
+    if (choice==1)
+    {
+        traverse(head);
+    }
+    else if (choice==2)
+    {
+        insert_beg(head);
+    }
+    else if (choice==3)
+    {
+        insert_end(head);
+    }
+    else if (choice==4)
+    {
+        insert_pos(head);
+    }
+    else if (choice==5)
+    {
+        delete_beg(head);
+    }
+    else if (choice==6)
+    {
+        delete_end(head);
+    }
+    else if (choice==7)
+    {
+        delete_pos(head);
+    }
+    else if (choice==8)
+    {
+        concatenate(head);
+    }
+    else if (choice==9)
+    {
+        exit(0);
+    }
+    else
+    {
+        cout<<"Invalid choice"<<endl;
+    }
+    menu(head);
+}
 
 
 // Main function
