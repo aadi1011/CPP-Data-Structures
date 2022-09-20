@@ -12,6 +12,15 @@ struct node
     struct node *prev;
 };
 
+//Traverse the list
+void traverse(struct node* head)
+{
+    struct node* temp = head->link;
+    cout << endl;
+    cout<<head->data<<" -> ";   //Base head printing
+//Code for while loop here
+}
+
 void menu(struct node* head)
 {
     //Creating a menu
