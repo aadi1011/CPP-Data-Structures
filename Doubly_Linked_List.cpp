@@ -18,7 +18,11 @@ void traverse(struct node* head)
     struct node* temp = head->link;
     cout << endl;
     cout<<head->data<<" -> ";   //Base head printing
-//Code for while loop here
+    while (temp != head)
+        {
+            cout << temp->data << " -> ";
+            temp = temp->link;
+        }
 }
 
 void menu(struct node* head)
