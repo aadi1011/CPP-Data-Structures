@@ -25,6 +25,22 @@ void traverse(struct node* head)
         }
 }
 
+// Insert at the beginning of the list
+void insert_beg (struct node *head)
+{
+    int n;
+    cout<<"Enter data of new node: ";
+    cin>>n;
+    struct node *newnode=NULL;
+    newnode=(struct node*)malloc(sizeof(struct node));
+    newnode->data=n;
+    newnode->next=NULL;
+    newnode->next=head;
+    newnode->prev=NULL;
+    head->prev=newnode;
+    head=newnode;
+    traverse(head);
+
 void menu(struct node* head)
 {
     //Creating a menu
