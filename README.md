@@ -1,6 +1,6 @@
 # Linked Lists
 
-<b>Repository by <a href="https://www.github.com/aadi1011">Aadith Sukumar</a>. Contact for reuse.</b>
+<b>Repository by <a href="https://www.github.com/aadi1011">Aadith Sukumar</a>. Contact for reuse and more.</b>
 
 A C++ menu driven program to create/handle single linked lists and doubly linked lists.
 
