@@ -40,6 +40,28 @@ void insert_beg (struct node *head)
     head->prev=newnode;
     head=newnode;
     traverse(head);
+}
+
+// Insert at the end of the list
+void insert_end(struct node *head)
+{
+    int n;
+    cout<<"Enter data of new node: ";
+    cin>>n;
+    struct node *newnode=NULL;
+    newnode=(struct node*)malloc(sizeof(struct node));
+    newnode->data=n;
+    newnode->next=NULL;
+    newnode->prev=NULL;
+    struct node *temp=head;
+    while(temp->next != NULL)
+    {
+        temp=temp->next;
+    }
+    temp->next=newnode;
+    newnode->prev=temp;
+    traverse(head);
+}
 
 void menu(struct node* head)
 {
