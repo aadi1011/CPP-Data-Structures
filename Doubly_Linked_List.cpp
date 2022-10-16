@@ -63,6 +63,32 @@ void insert_end(struct node *head)
     traverse(head);
 }
 
+// Insert at a position in list
+void insert_pos(struct node *head)
+{
+    int n, position;
+    cout<<"Enter data of new node: ";
+    cin>>n;
+    cout<<"Enter position to enter: ";
+    cin>>position;
+    struct node *newnode=NULL;
+    newnode=(struct node*)malloc(sizeof(struct node));
+    newnode->data=n;
+    newnode->next=NULL;
+    newnode->prev=NULL;
+
+    struct node *temp=head;
+    for(int i=1; i<position-1; i++)
+    {
+        temp=temp->next;
+    }
+    newnode->next=temp->next;
+    newnode->prev=temp;
+    temp->next=newnode;
+    temp->next->prev=newnode;
+    traverse(head);
+}
+
 void menu(struct node* head)
 {
     //Creating a menu
