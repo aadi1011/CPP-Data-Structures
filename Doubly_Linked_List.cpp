@@ -89,6 +89,16 @@ void insert_pos(struct node *head)
     traverse(head);
 }
 
+// Delete at beginning of list
+void delete_beg(struct node *head)
+{
+    struct node *temp=head;
+    head=head->next;
+    head->prev=NULL;
+    free(temp);
+    traverse(head);
+}
+
 void menu(struct node* head)
 {
     //Creating a menu
