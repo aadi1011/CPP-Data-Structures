@@ -99,6 +99,19 @@ void delete_beg(struct node *head)
     traverse(head);
 }
 
+// Delete at end of list
+void delete_end(struct node *head)
+{
+    struct node *temp=head;
+    while(temp->next != NULL)
+    {
+        temp=temp->next;
+    }
+    temp->prev->next=NULL;
+    free(temp);
+    traverse(head);
+}
+
 void menu(struct node* head)
 {
     //Creating a menu
