@@ -112,6 +112,23 @@ void delete_end(struct node *head)
     traverse(head);
 }
 
+// Delete at a position in list
+void delete_pos(struct node *head)
+{
+    struct node *temp=head;
+    int position;
+    cout<<"Enter position to delete: ";
+    cin>>position;
+    for (int i=1; i<position; i++)
+    {
+        temp=temp->next;
+    }
+    temp->prev->next=temp->next;
+    temp->next->prev=temp->prev;
+    free(temp);
+    traverse(head);
+}
+
 void menu(struct node* head)
 {
     //Creating a menu
