@@ -129,6 +129,31 @@ void delete_pos(struct node *head)
     traverse(head);
 }
 
+// Concatenate two lists
+void concatenate(struct node *head1)
+{
+    struct node *head2=NULL;
+    struct node *second2=NULL;
+    head2=(struct node*)malloc(sizeof(struct node));
+    second2=(struct node*)malloc(sizeof(struct node));
+
+    head2->data=10;
+    head2->next=second2;
+    head2->prev=NULL;
+    second2->data=20;
+    second2->next=NULL;
+    second2->prev=head2;
+
+    struct node *temp=head1;
+    while(temp->next != NULL)
+    {
+        temp=temp->next;
+    }
+    temp->next=head2;
+    head2->prev=temp;
+    traverse(head1);
+}
+
 void menu(struct node* head)
 {
     //Creating a menu
