@@ -12,17 +12,15 @@ struct node
     struct node *prev;
 };
 
-//Traverse the list
-void traverse(struct node* head)
+// Traverse the list
+void traverse (struct node *head)
 {
-    struct node* temp = head->link;
-    cout << endl;
-    cout<<head->data<<" -> ";   //Base head printing
-    while (temp != head)
-        {
-            cout << temp->data << " -> ";
-            temp = temp->link;
-        }
+    struct node *temp=head;
+    while (temp!=NULL)
+    {
+        cout<<temp->data<<"->";
+        temp=temp->next;
+    }
 }
 
 // Insert at the beginning of the list
@@ -87,7 +85,7 @@ void insert_pos(struct node *head)
     temp->next=newnode;
     temp->next->prev=newnode;
     traverse(head);
-}
+}     
 
 // Delete at beginning of list
 void delete_beg(struct node *head)
@@ -112,6 +110,48 @@ void delete_end(struct node *head)
     traverse(head);
 }
 
+// Delete at a position in list
+void delete_pos(struct node *head)
+{
+    struct node *temp=head;
+    int position;
+    cout<<"Enter position to delete: ";
+    cin>>position;
+    for (int i=1; i<position; i++)
+    {
+        temp=temp->next;
+    }
+    temp->prev->next=temp->next;
+    temp->next->prev=temp->prev;
+    free(temp);
+    traverse(head);
+}
+
+// Concatenate two lists
+void concatenate(struct node *head1)
+{
+    struct node *head2=NULL;
+    struct node *second2=NULL;
+    head2=(struct node*)malloc(sizeof(struct node));
+    second2=(struct node*)malloc(sizeof(struct node));
+
+    head2->data=10;
+    head2->next=second2;
+    head2->prev=NULL;
+    second2->data=20;
+    second2->next=NULL;
+    second2->prev=head2;
+
+    struct node *temp=head1;
+    while(temp->next != NULL)
+    {
+        temp=temp->next;
+    }
+    temp->next=head2;
+    head2->prev=temp;
+    traverse(head1);
+}
+
 void menu(struct node* head)
 {
     //Creating a menu
@@ -129,7 +169,7 @@ void menu(struct node* head)
     //Taking input from user
     cout<<"Enter your choice: ";
     cin>>choice;
-    
+
     if (choice==1)
     {
         traverse(head);
@@ -173,7 +213,6 @@ void menu(struct node* head)
     menu(head);
 }
 
-
 // Main function
 int main()
 {
@@ -187,15 +226,12 @@ int main()
     third=(struct node*)malloc(sizeof(struct node));
 
     // Assigning values to nodes
-        //First (head) value
     head->prev=NULL;
     head->data=45;
     head->next=second;
-        //second value    
     second->prev=head;
     second->data=80;
     second->next=third;
-        //third value
     third->prev=second;
     third->data=95;
     third->next=NULL;
@@ -203,4 +239,3 @@ int main()
     menu(head); 
     return 0;
 }
-
