@@ -12,17 +12,15 @@ struct node
     struct node *prev;
 };
 
-//Traverse the list
-void traverse(struct node* head)
+// Traverse the list
+void traverse (struct node *head)
 {
-    struct node* temp = head->link;
-    cout << endl;
-    cout<<head->data<<" -> ";   //Base head printing
-    while (temp != head)
-        {
-            cout << temp->data << " -> ";
-            temp = temp->link;
-        }
+    struct node *temp=head;
+    while (temp!=NULL)
+    {
+        cout<<temp->data<<"->";
+        temp=temp->next;
+    }
 }
 
 // Insert at the beginning of the list
@@ -87,7 +85,7 @@ void insert_pos(struct node *head)
     temp->next=newnode;
     temp->next->prev=newnode;
     traverse(head);
-}
+}     
 
 // Delete at beginning of list
 void delete_beg(struct node *head)
@@ -171,7 +169,7 @@ void menu(struct node* head)
     //Taking input from user
     cout<<"Enter your choice: ";
     cin>>choice;
-    
+
     if (choice==1)
     {
         traverse(head);
@@ -215,7 +213,6 @@ void menu(struct node* head)
     menu(head);
 }
 
-
 // Main function
 int main()
 {
@@ -229,15 +226,12 @@ int main()
     third=(struct node*)malloc(sizeof(struct node));
 
     // Assigning values to nodes
-        //First (head) value
     head->prev=NULL;
     head->data=45;
     head->next=second;
-        //second value    
     second->prev=head;
     second->data=80;
     second->next=third;
-        //third value
     third->prev=second;
     third->data=95;
     third->next=NULL;
@@ -245,4 +239,3 @@ int main()
     menu(head); 
     return 0;
 }
-
