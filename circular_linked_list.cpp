@@ -10,6 +10,19 @@ struct node
     struct node* link;
 };
 
+//Traverse the list
+void traverse(struct node* head)
+{
+    struct node* temp = head->link;
+    cout << endl;
+    cout<<head->data<<" -> ";   //Base head printing
+    while (temp != head)
+    {
+        cout << temp->data << " -> ";
+        temp = temp->link;
+	}
+}
+
 //Main function
 int main()
 {
