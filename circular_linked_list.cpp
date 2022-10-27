@@ -23,6 +23,19 @@ void traverse(struct node* head)
 	}
 }
 
+//Insert at the beginning of the circular list
+void insert_beg(struct node* head)
+{
+    int n;
+    cout<<"Enter data of new node: ";
+    cin>>n;
+    
+	struct node* newnode = NULL;
+    newnode = (struct node*)malloc(sizeof(struct node*));
+    newnode->data = n;
+    
+
+
 //Main function
 int main()
 {
