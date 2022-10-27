@@ -32,7 +32,20 @@ void insert_beg(struct node* head)
     
 	struct node* newnode = NULL;
     newnode = (struct node*)malloc(sizeof(struct node*));
-    newnode->data = n;
+    newnode->data = n;	
+	struct node* temp = head->link;
+	while (temp->link != head)
+	{	
+		temp = temp->link;
+	}
+	temp->link = newnode;
+	newnode->link = head;
+	head=newnode;
+
+	cout<<endl;
+	traverse(head);
+}
+	
     
 
 
