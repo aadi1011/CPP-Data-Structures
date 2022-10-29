@@ -46,7 +46,31 @@ void insert_beg(struct node* head)
 	traverse(head);
 }
 	
-    
+//Insert at a position in the circular list
+void pos_insert(struct node* head)
+{
+	int n, position;
+	cout<<"Enter data of new node: ";
+	cin>>n;
+	cout<<"Enter position to enter: ";
+	cin>>position;
+
+	struct node* newnode = NULL;
+    newnode = (struct node*)malloc(sizeof(struct node*));
+	
+	struct node* temp = head;
+	for (int i = 1; i < position - 1; i++)
+	{
+		temp = temp->link;
+	}
+	newnode = (struct node*)malloc(sizeof(struct node*));
+	newnode->data = n;
+	newnode->link = NULL;
+	newnode->link = temp->link;
+	temp->link = newnode;
+	cout<<endl;
+	traverse(head);
+}    
 
 
 //Main function
