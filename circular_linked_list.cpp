@@ -72,6 +72,19 @@ void pos_insert(struct node* head)
 	traverse(head);
 }    
 
+// Deleting from the beginning of the circular list
+void delete_beg(struct node* head)
+{
+	struct node* temp = head->link;
+	while (temp->link != head)
+	{
+		temp = temp->link;
+	}
+	temp->link = head->link;
+	head = head->link;
+	cout<<endl;
+	traverse(head);
+}
 
 //Main function
 int main()
