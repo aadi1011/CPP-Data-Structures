@@ -100,8 +100,48 @@ void menu(struct node* head)
 	cout<<"6. Exit"<<endl;
 	cout<<"Enter choice: ";
 	cin>>choice;
+	if(choice==1)
+	{
+		traverse(head);
+	}
+	else if(choice==2)
+	{
+		insert_beg(head);
+	}
+	else if(choice==3)
+	{
+		pos_insert(head);
+	}
+	else if(choice==4)
+	{
+		delete_beg(head);
+	}
+	else if(choice==5)
+	{
+		// cout<<"Enter position to delete: ";
+		// int position;
+		// cin>>position;
+		// struct node* temp = head;
+		// for (int i = 1; i < position - 1; i++)
+		// {
+		// 	temp = temp->link;
+		// }
+		// temp->link = temp->link->link;
+		// cout<<endl;
+		// traverse(head);
+	}
+	else if(choice==6)
+	{
+		exit(0);
+	}
+	else
+	{
+		cout<<"Invalid choice"<<endl;
+	}
+	menu(head);
+	
+}
 
-// ELSE IF PENDING
 
 //Main function
 int main()
