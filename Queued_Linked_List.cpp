@@ -11,3 +11,16 @@ struct node
     struct node* link;
 };  
 struct node *top = (struct node*) malloc(sizeof(struct node));
+
+//Display function
+void display()
+{
+    struct node* temp = top;
+    cout<<endl;
+    while(temp!=NULL)
+    {
+        cout<<temp->data<<" -> ";
+        temp=temp->link;
+    }
+    main();
+}
