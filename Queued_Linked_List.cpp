@@ -35,3 +35,19 @@ void push(int n)
     }
     display();
 }
+
+// Delete at the beginning of the list
+void pop()
+{
+    if(top==NULL)
+    {
+        cout<<"\nUnderflow condition";
+    }
+    else
+    {
+        struct node* temp = top;
+        top = top->link;
+        free(temp);
+    }
+    display();
+}
