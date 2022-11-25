@@ -40,3 +40,19 @@ void push(int n)
     }
     display();
 }
+
+// Pop function
+void pop()
+{
+    if(top==NULL)
+    {
+        cout<<"\nUnderflow condition";
+    }
+    else
+    {
+        struct node* temp = top;
+        top = top->link;
+        free(temp);
+    }
+    display();
+}
