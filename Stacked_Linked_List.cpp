@@ -10,3 +10,15 @@ struct node
     struct node* link;
 };  
 node*top;
+
+//Display function
+void display()
+{
+    struct node* temp = top;
+    cout<<endl;
+    while(temp!=NULL)
+    {
+        cout<<temp->data<<" -> ";
+        temp=temp->link;
+    }
+}
