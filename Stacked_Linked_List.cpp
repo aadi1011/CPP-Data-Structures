@@ -22,3 +22,21 @@ void display()
         temp=temp->link;
     }
 }
+
+// Push function
+void push(int n)
+{
+    struct node* newnode = NULL;
+    newnode = (struct node*) malloc(sizeof(struct node));
+    if (!newnode)
+    {
+        cout<<"\nOverflow condition";
+    }
+    else
+    {
+        newnode -> data = n;
+        newnode -> link = top;
+        top=newnode;
+    }
+    display();
+}
