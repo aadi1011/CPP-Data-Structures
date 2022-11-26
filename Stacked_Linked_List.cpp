@@ -56,3 +56,8 @@ void pop()
     }
     display();
 }
+
+//main function
+int main()
+{
+}
