@@ -60,4 +60,12 @@ void pop()
 //main function
 int main()
 {
+    cout<<"\n1. Push";
+    cout<<"\n2. Pop";
+    cout<<"\n3. Display";
+    cout<<"\n4. Exit";
+    int choice;
+    cout<<"\nChoose option: ";
+    cin>>choice;
+
 }
