@@ -87,6 +87,24 @@ void delete_beg(struct node* head)
 	traverse(head);
 }
 
+// Reverse the circular list
+void reverse_list(struct node* head)
+{
+	struct node* temp = head->link;
+	struct node* prev = NULL;
+	struct node* next = NULL;
+	while (temp != head)
+	{
+		next = temp->link;
+		temp->link = prev;
+		prev = temp;
+		temp = next;
+	}
+	head->link = prev;
+	cout<<endl;
+	traverse(head);
+}
+
 //Creating the menu
 
 void menu(struct node* head)
@@ -97,7 +115,8 @@ void menu(struct node* head)
 	cout<<"2. Insert at the beginning of the list"<<endl;
 	cout<<"3. Insert at a position in the list"<<endl;
 	cout<<"4. Delete from the beginning of the list"<<endl;
-	cout<<"5. Exit"<<endl;
+	cout<<"5. Reverse the list"<<endl;
+	cout<<"6. Exit"<<endl;
 	cout<<"Enter choice: ";
 	cin>>choice;
 
@@ -118,6 +137,10 @@ void menu(struct node* head)
 		delete_beg(head);
 	}
 	else if(choice==5)
+	{
+		reverse_list(head);
+	}
+	else if(choice==6)
 	{
 		exit(0);
 	}
@@ -147,6 +170,6 @@ int main()
     third->data=300;
     third->link=head;
     cout<<endl;
-	menu(head);
+    menu(head);
     return 0;
 }
