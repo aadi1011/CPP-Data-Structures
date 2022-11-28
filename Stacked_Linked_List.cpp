@@ -67,5 +67,28 @@ int main()
     int choice;
     cout<<"\nChoose option: ";
     cin>>choice;
+    if(choice==1)
+    {
+        int n;
+        cout<<"\nEnter data: ";
+        cin>>n;
+        push(n);
+    }
+    else if(choice==2)
+    {
+        pop();
+    }
+    else if(choice==3)
+    {
+        display();
+    }
+    else if(choice==4)
+    {
+        return 0;
+    }
+    else
+    {
+        cout<<"\nInvalid choice";
+    }
 
 }
