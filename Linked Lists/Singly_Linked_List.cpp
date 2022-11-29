@@ -1,4 +1,4 @@
-//Menu driven C++ Program to perform operations on a linked list
+//Menu driven C++ Program to perform operations on a singly linked list
 //Code by Aadith Sukumar (https://github.com/aadi1011)
 
 #include <iostream>
