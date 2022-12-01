@@ -4,7 +4,8 @@
 #include <iostream>
 using namespace std;
 int main();
-//
+
+// Node Structure
 struct node
 {
     int data;
