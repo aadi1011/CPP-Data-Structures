@@ -26,7 +26,7 @@ void traverse(struct node* head)
 //Insert at the beginning of the circular list
 void insert_beg(struct node* head)
 {
-    int n;
+    int n;	
     cout<<"Enter data of new node: ";
     cin>>n;
     
@@ -35,7 +35,7 @@ void insert_beg(struct node* head)
     newnode->data = n;
     
 	struct node* temp = head->link;
-	while (temp->link != head)
+	while (temp->link != head)	
     {
         temp = temp->link;
     }
@@ -106,7 +106,6 @@ void reverse_list(struct node* head)
 }
 
 //Creating the menu
-
 void menu(struct node* head)
 {
     int choice;
@@ -170,6 +169,6 @@ int main()
     third->data=300;
     third->link=head;
     cout<<endl;
-    menu(head);
+	menu(head);
     return 0;
 }
