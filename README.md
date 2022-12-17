@@ -2,11 +2,20 @@
 
 <b>Repository by <a href="https://www.github.com/aadi1011">Aadith Sukumar</a>. Contact for reuse and more.</b>
 
-A C++ menu driven program to create/handle various linked list data structures such as:
-- Singly Linked List
-- Doubly Linked List
-- Circular Linked List
+A Repositories of various Data Structures and Algorithms in C++ in efficient menu driven programs.
 
+### Data Structures:
+- Linked Lists
+  - Singly Linked List
+  - Doubly Linked List
+  - Circular Linked List
+  - Stack and Queue Linked Lists
+
+- Sorting
+  - Quick Sort
+    - First Pivot and Last Pivot
+    
+ 
 
 <b>Features:</b>
 <ul>
