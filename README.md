@@ -14,6 +14,7 @@ A Repositories of various Data Structures and Algorithms in C++ in efficient men
 - Sorting
   - Quick Sort
     - First Pivot and Last Pivot
+  - Bubble Sort
     
  
 
