@@ -1,4 +1,5 @@
-// Insertion Sort
+// C++ Program to implement Insertion Sort to sort an array of integers
+// Code by Aadith Sukumar (https://www.github.com/aadi1011)
 
 #include <iostream>
 using namespace std;
