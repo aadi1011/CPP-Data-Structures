@@ -1,3 +1,6 @@
+// C++ Program to implement Bubble Sort algorithm to sort an array of integers.
+// Code by Aadith Sukumar (https://www.github.com/aadi1011)
+
 #include <iostream>
 using namespace std;
 
