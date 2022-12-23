@@ -1,6 +1,30 @@
 #include <iostream>  
 using namespace std;
 
+void selection(int arr[], int n)
+{
+    cout << "Sorting of each pass:\n";
+    for (int i = 0; i < n - 1; i++)
+    {
+        int min = i; 
+        for (int j = i + 1; j < n; j++)
+            if (arr[j] < arr[min])
+                min = j;
+        int temp = arr[min];
+        arr[min] = arr[i];
+        arr[i] = temp;
+        
+        for (int i = 0; i < n; i++) {
+            cout << arr[i] << " ";
+        }
+        cout << endl;
+    }
+    cout << "\nSorted Array: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+}
+
 void main()
 {
     int arr[100]{}, n;
