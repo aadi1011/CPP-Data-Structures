@@ -2,7 +2,7 @@
 #include<iostream>
 using namespace std;
 
-
+// Merging function
 void merge(int arr[], int l, int mid, int h) 
 {
 	int n1 = mid - l + 1;
@@ -47,6 +47,18 @@ void merge(int arr[], int l, int mid, int h)
 		arr[k] = b[j];
 		k++;
 		j++;
+	}
+}
+
+//Dividing function
+void MergeSort(int arr[], int l, int h) 
+{
+	if (l < h) 
+	{
+		int mid = (l + h) / 2;
+		MergeSort(arr, l, mid);
+		MergeSort(arr, mid + 1, h);
+		merge(arr, l, mid, h);    // Calls the merging function
 	}
 }
 
