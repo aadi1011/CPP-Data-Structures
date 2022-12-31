@@ -1,5 +1,5 @@
-// C++ Program to implement Quick Sort Algorithm
-// Code by Aadith Sukumar (https://www.github.com/aadi1011
+// C++ Program to implement Quick Sort algorithm (by taking last element as pivot) to sort an array of integers.
+// Code by Aadith Sukumar (https://www.github.com/aadi1011)
 
 #include <iostream>
 #include <algorithm>
