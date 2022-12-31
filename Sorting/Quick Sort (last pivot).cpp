@@ -1,4 +1,5 @@
-//QUICK SORT
+// C++ Program to implement Quick Sort Algorithm
+// Code by Aadith Sukumar (https://www.github.com/aadi1011
 
 #include <iostream>
 #include <algorithm>
@@ -51,31 +52,3 @@ void main()
 	cout << endl;
 }
 
-
-/*
-int main()
-{
-	int n;
-	cout<<"Enter number of elements:"<<endl;
-	cin>>n;
-	int arr[n];
-	cout<<"enter elements of array"<<endl;
-	for(int i=0;i<n;i++)
-	{
-		cin>>arr[i];
-	}
-	cout<<"original array"<<endl;
-	for(int i=0;i<n;i++)
-	{
-		cout<<arr[i]<<" ";
-	}
-	QuickSort(arr,0,n-1);
-	cout<<"\nsorted array"<<endl;
-	for(int i=0;i<n;i++)
-	{
-		cout<<arr[i]<<" ";
-	}
-	cout<<endl;
-	return 0;
-}
-*/
