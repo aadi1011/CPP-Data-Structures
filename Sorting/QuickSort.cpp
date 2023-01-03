@@ -1,4 +1,5 @@
-//QUICK SORT
+// C++ Program to implement Quick Sort algorithm (by taking first element as pivot) to sort an array of integers.
+// Code by Aadith Sukumar (https://www.github.com/aadi1011)
 
 #include <iostream>
 using namespace std;
