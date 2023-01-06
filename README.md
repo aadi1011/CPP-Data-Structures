@@ -17,7 +17,7 @@ A Repositories of various Data Structures and Algorithms in C++ in efficient men
   - Bubble Sort
   - Insertion Sort
   - Merge Sort
-  - Selection SOrt
+  - Selection Sort
     
  
 
