@@ -16,6 +16,8 @@ A Repositories of various Data Structures and Algorithms in C++ in efficient men
     - First Pivot and Last Pivot
   - Bubble Sort
   - Insertion Sort
+  - Merge Sort
+  - Selection SOrt
     
  
 
