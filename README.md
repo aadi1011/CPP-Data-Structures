@@ -10,17 +10,7 @@ A Repositories of various Data Structures and Algorithms in C++ in efficient men
   - Doubly Linked List
   - Circular Linked List
   - Stack and Queue Linked Lists
-
-- Sorting
-  - Quick Sort
-    - First Pivot and Last Pivot
-  - Bubble Sort
-  - Insertion Sort
-  - Merge Sort
-  - Selection Sort
-    
- 
-
+  
 <b>Features:</b>
 <ul>
 <li>Traversing the list</li>
@@ -32,3 +22,14 @@ A Repositories of various Data Structures and Algorithms in C++ in efficient men
 </ul>
 
 <i>Implementation in stack and queue also available</i> 
+
+- Sorting
+  - Quick Sort
+    - First Pivot and Last Pivot
+  - Bubble Sort
+  - Insertion Sort
+  - Merge Sort
+  - Selection Sort
+    
+ 
+
