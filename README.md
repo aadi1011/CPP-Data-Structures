@@ -2,7 +2,7 @@
 
 <b>Repository by <a href="https://www.github.com/aadi1011">Aadith Sukumar</a>. Contact for reuse and more.</b>
 
-A Repositories of various Data Structures and Algorithms in C++ in efficient menu driven programs.
+A repository of various Data Structures and Algorithms in C++ in efficient menu driven programs.
 
 ### Data Structures:
 - Linked Lists
