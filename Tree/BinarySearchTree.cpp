@@ -55,6 +55,28 @@ void insert()
                     temp=temp->left;
                 }
             }
+            else if (data>temp->data)
+            {
+                if (temp->right==NULL)
+                {
+                    temp->right=newnode;
+                    cout<<"RIGHT: "<<temp->right->data<<endl<<"Address: "<<&temp->right<<endl;
+                    break;
+                }
+                else
+                {
+                    temp=temp->right;
+                }
+            }
+            else
+            {
+                cout<<"Duplicate data"<<endl;
+                break;
+            }
+        }
+    }
+    main();
+}
             
 
 //Main function
