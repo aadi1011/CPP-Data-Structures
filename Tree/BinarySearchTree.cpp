@@ -13,7 +13,49 @@ struct Node
 };
 struct Node *root = NULL;
 
-
+//Function to insert in tree
+void insert()
+{
+    int data;
+    cout<<"Enter data to insert: ";
+    cin>>data;
+    
+    struct Node* temp = root;
+    temp=(struct Node*)malloc(sizeof(struct Node));
+    struct Node *newnode=NULL;
+    newnode=(struct Node*)malloc(sizeof(struct Node));
+    newnode->data=data;
+    newnode->left=NULL;
+    newnode->right=NULL;
+    
+    //If tree is empty
+    if (root==NULL)
+    {
+        root=temp;
+        root->data=data;
+        root->left=NULL;
+        root->right=NULL;
+        cout<<"ROOT: "<<root->data<<endl<<"Address: "<<&root<<endl;
+    }
+    else
+    {
+        temp=root;
+        while (temp!=NULL)
+        {
+            if (data<temp->data)
+            {
+                if (temp->left==NULL)
+                {
+                    temp->left=newnode;
+                    cout<<"LEFT: "<<temp->left->data<<endl<<"Address: "<<&temp->left<<endl;
+                    break;
+                }
+                else
+                {
+                    temp=temp->left;
+                }
+            }
+            
 
 //Main function
 int main()
