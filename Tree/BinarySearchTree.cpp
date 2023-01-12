@@ -77,7 +77,20 @@ void insert()
     }
     main();
 }
-            
+
+//Function for inorder traversal of tree
+void inorder(struct Node *root)
+{
+    if (root==NULL)
+    {
+        return;
+    }
+    inorder(root->left);
+    cout<<root->data<<" -> ";
+    inorder(root->right);
+    //cout<<endl;
+    //main();
+}
 
 //Main function
 int main()
