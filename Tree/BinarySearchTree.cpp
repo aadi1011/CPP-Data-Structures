@@ -51,9 +51,9 @@ void insert()
                     cout<<"LEFT: "<<temp->left->data<<endl<<"Address: "<<&temp->left<<endl;
                     break;
                 }
-                else
+                else                    // ...and if the right node is unoccupied
                 {
-                    temp=temp->left;
+                    temp=temp->left;    // place new node 'data' in right child of the temp class
                 }
             }
             else if (data>temp->data)
