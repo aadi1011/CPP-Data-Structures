@@ -5,6 +5,7 @@
 using namespace std;
 int main();
 
+// base structure code for the nodes
 struct Node
 {
     int data;
@@ -40,13 +41,13 @@ void insert()
     else
     {
         temp=root;
-        while (temp!=NULL)
+        while (temp!=NULL)  // traversing the tree till NULL (end) values are reached.
         {
-            if (data<temp->data)
+            if (data<temp->data)    // if data is lesser than element on left... 
             {
-                if (temp->left==NULL)
+                if (temp->left==NULL)   // ...and if the left node is unoccupied
                 {
-                    temp->left=newnode;
+                    temp->left=newnode; // place new node 'data' in left child of the temp class
                     cout<<"LEFT: "<<temp->left->data<<endl<<"Address: "<<&temp->left<<endl;
                     break;
                 }
