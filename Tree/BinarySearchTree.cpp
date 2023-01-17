@@ -93,17 +93,8 @@ void inorder(struct Node *root)
     //main();
 }
 
-//Function for inorder traversal of tree
-void inorder(struct Node *root)
-{
-    if (root==NULL)
-    {
-        return;
-    }
-    inorder(root->left);
-    cout<<root->data<<" -> ";
-    inorder(root->right);
-}
+//Function for preorder traversal of tree
+
 
 //Main function
 int main()
