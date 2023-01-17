@@ -94,6 +94,18 @@ void inorder(struct Node *root)
 }
 
 //Function for preorder traversal of tree
+void preorder(struct Node *root)
+{
+    if (root==NULL)
+    {
+        return;
+    }
+    cout<<root->data<<" -> ";
+    preorder(root->left);
+    preorder(root->right);
+    //cout<<endl;
+    //main();
+}
 
 
 //Main function
