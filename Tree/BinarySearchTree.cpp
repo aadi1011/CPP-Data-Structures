@@ -101,10 +101,19 @@ void preorder(struct Node *root)
     cout<<root->data<<" -> ";
     preorder(root->left);
     preorder(root->right);
-    //cout<<endl;
-    //main();
 }
 
+//Function for postorder traversal of tree
+void postorder(struct Node *root)
+{
+    if (root==NULL)
+    {
+        return;
+    }
+    postorder(root->left);
+    postorder(root->right);
+    cout<<root->data<<" -> ";
+}
 
 //Main function
 int main()
