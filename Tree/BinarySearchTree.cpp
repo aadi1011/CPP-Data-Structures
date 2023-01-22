@@ -134,7 +134,18 @@ void breadth_first(struct Node *root)
             temp=queue[++front];
             cout<<temp->data<<" -> ";
             if (temp->left!=NULL)
-
+            {
+                queue[++rear]=temp->left;
+            }
+            if (temp->right!=NULL)
+            {
+                queue[++rear]=temp->right;
+            }
+        }
+    }
+    //cout<<endl;
+    //main();
+}
 
 
 //Main function
