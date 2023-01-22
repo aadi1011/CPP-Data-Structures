@@ -115,6 +115,18 @@ void postorder(struct Node *root)
     cout<<root->data<<" -> ";
 }
 
+//Function for breadth first traversal of tree with queue
+void breadth_first(struct Node *root)
+{
+    struct Node *temp = root;
+    struct Node *queue[100];
+    int front = -1;
+    int rear = -1;
+    if (temp==NULL)
+    {
+        cout<<"Tree is empty"<<endl;
+    }
+
 //Main function
 int main()
 {
