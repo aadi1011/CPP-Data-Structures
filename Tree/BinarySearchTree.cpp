@@ -143,8 +143,6 @@ void breadth_first(struct Node *root)
             }
         }
     }
-    //cout<<endl;
-    //main();
 }
 
 
