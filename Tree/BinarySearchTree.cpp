@@ -126,6 +126,16 @@ void breadth_first(struct Node *root)
     {
         cout<<"Tree is empty"<<endl;
     }
+    else
+    {
+        queue[++rear]=temp;
+        while (front!=rear)
+        {
+            temp=queue[++front];
+            cout<<temp->data<<" -> ";
+            if (temp->left!=NULL)
+
+
 
 //Main function
 int main()
