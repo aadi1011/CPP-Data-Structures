@@ -145,6 +145,10 @@ void breadth_first(struct Node *root)
     }
 }
 
+/*When deleting a node, split tree in two from root, 
+go to left half of tree and replace root with right most element. 
+Else take right half of tree and replace root with left most element. */
+
 
 //Main function
 int main()
