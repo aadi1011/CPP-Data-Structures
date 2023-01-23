@@ -162,7 +162,19 @@ void search()
         {
             temp=temp->left;
         }
-
+        else if (data>temp->data)
+        {
+            temp=temp->right;
+        }
+        else
+        {
+            cout<<"Element found"<<endl;
+            main();
+        }
+    }
+    cout<<"Element not found"<<endl;
+    main();
+}
 
 //Main function
 int main()
