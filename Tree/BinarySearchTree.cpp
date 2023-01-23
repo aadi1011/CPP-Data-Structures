@@ -149,6 +149,20 @@ void breadth_first(struct Node *root)
 go to left half of tree and replace root with right most element. 
 Else take right half of tree and replace root with left most element. */
 
+// Search if an element is present in tree
+void search()
+{
+    int data;
+    cout<<"Enter data to search: ";
+    cin>>data;
+    struct Node *temp = root;
+    while (temp!=NULL)
+    {
+        if (data<temp->data)
+        {
+            temp=temp->left;
+        }
+
 
 //Main function
 int main()
