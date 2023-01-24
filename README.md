@@ -11,15 +11,15 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
   - Circular Linked List
   - Stack and Queue Linked Lists
   
-Features:
-<ul>
-<li>Traversing the list</li>
-<li>Insert additional data nodes at: <ul><li>Beginning of list</li><li>End of List</li><li>At specified postion in list</li></ul></li>
-<li>Delete data nodes at: <ul><li>Beginning of list</li><li>End of List</li><li>At specified postion in list</li></ul></li>
-<li>Concatenate two lists</li>
-<li>Reverse a list</li>
-<li>Search an element in the list</li>
-</ul>
+    Features present in LinkedLists:
+    <ul>
+    <li>Traversing the list</li>
+    <li>Insert additional data nodes at: <ul><li>Beginning of list</li><li>End of List</li><li>At specified postion in list</li></ul></li>
+    <li>Delete data nodes at: <ul><li>Beginning of list</li><li>End of List</li><li>At specified postion in list</li></ul></li>
+    <li>Concatenate two lists</li>
+    <li>Reverse a list</li>
+    <li>Search an element in the list</li>
+    </ul>
 
 <i>Implementation in stack and queue also available</i> 
 
