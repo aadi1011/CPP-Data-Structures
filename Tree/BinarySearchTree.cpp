@@ -174,7 +174,22 @@ void search()
     }
     cout<<"Element not found"<<endl;
     main();
-}
+}   
+
+
+//Function to delete a node
+void deleteNode()
+{
+    cout<<"Enter data to delete: ";
+    int data;
+    cin>>data;
+    struct Node *temp = root;
+    struct Node *parent = NULL;
+    while (temp!=NULL)
+    {
+
+
+
 
 //Main function
 int main()
