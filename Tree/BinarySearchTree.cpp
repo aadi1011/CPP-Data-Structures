@@ -195,6 +195,22 @@ void deleteNode()
         {
             temp=temp->right;
         }
+        else    //Element found
+        {
+            if(temp->left==NULL && temp->right==NULL)   //End leaf node and no child
+            {
+                if (parent->left==temp)
+                {
+                    parent->left=NULL;
+                }
+                else
+                {
+                    parent->right=NULL;
+                }
+                free(temp);
+                cout<<"Node deleted"<<endl;
+                main();
+            }
 
 
 
