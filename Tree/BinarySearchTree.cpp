@@ -238,7 +238,17 @@ void deleteNode()
                 free(temp);
                 cout<<"Node deleted"<<endl;
                 main();
-
+            else                                        //child node present in both left and right
+            {
+                struct Node *temp2 = temp->right;
+                struct Node *parent2 = temp;
+                while (temp2->left!=NULL)
+                {
+                    parent2=temp2;
+                    temp2=temp2->left;
+                }
+                temp->data=temp2->data;
+ 
 
 
 
