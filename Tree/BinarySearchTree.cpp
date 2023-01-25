@@ -211,6 +211,20 @@ void deleteNode()
                 cout<<"Node deleted"<<endl;
                 main();
             }
+            else if (temp->left==NULL)                  //child node present in right and left empty
+            {
+                if (parent->left==temp)
+                {
+                    parent->left=temp->right;
+                }
+                else if (parent->right==temp)
+                {
+                    parent->right=temp->right;
+                }
+                free(temp);
+                cout<<"Node deleted"<<endl;
+                main();
+
 
 
 
