@@ -187,6 +187,14 @@ void deleteNode()
     struct Node *parent = NULL;
     while (temp!=NULL)
     {
+        if (data<temp->data)
+        {
+            temp=temp->left;
+        }
+        else if (data>temp->data)
+        {
+            temp=temp->right;
+        }
 
 
 
