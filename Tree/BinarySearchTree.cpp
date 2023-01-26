@@ -248,7 +248,21 @@ void deleteNode()
                     temp2=temp2->left;
                 }
                 temp->data=temp2->data;
- 
+                if (parent2->left==temp2)
+                {
+                    parent2->left=temp2->right;
+                }
+                else if (parent2->right==temp2)
+                {
+                    parent2->right=temp2->right;
+                }
+                free(temp2);
+                cout<<"Node deleted"<<endl;
+                main();
+            }
+        }
+    }
+} 
 
 
 
