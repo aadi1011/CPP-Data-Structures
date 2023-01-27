@@ -263,6 +263,18 @@ void deleteNode()
         }
     }
 } 
+    
+//Sub menu for traversal
+void traversal()
+{
+    int choice;
+    cout<<"1. Inorder Traversal"<<endl;
+    cout<<"2. Preorder Traversal"<<endl;
+    cout<<"3. Postorder Traversal"<<endl;
+    cout<<"4. Breadth First Traversal"<<endl;
+    cout<<"5. Back to main menu"<<endl;
+    cout<<"Enter your choice: ";
+    cin>>choice;
 
 
 
