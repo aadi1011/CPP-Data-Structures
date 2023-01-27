@@ -292,7 +292,20 @@ void traversal()
             cout<<endl;
             main();
             break;
-
+        case 4:
+            breadth_first(root);
+            cout<<endl;
+            main();
+            break;
+        case 5:
+            main();
+            break;
+        default:
+            cout<<"Invalid choice"<<endl;
+            traversal();
+            break;
+    }
+}
 
 
 
