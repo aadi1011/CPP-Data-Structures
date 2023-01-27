@@ -275,7 +275,37 @@ void traversal()
     cout<<"5. Back to main menu"<<endl;
     cout<<"Enter your choice: ";
     cin>>choice;
-
+    switch (choice)
+    {
+        case 1:
+            inorder(root);
+            cout<<endl;
+            main();
+            break;
+        case 2:
+            preorder(root);
+            cout<<endl;
+            main();
+            break;
+        case 3:
+            postorder(root);
+            cout<<endl;
+            main();
+            break;
+        case 4:
+            breadth_first(root);
+            cout<<endl;
+            main();
+            break;
+        case 5:
+            main();
+            break;
+        default:
+            cout<<"Invalid choice"<<endl;
+            traversal();
+            break;
+    }
+}
 
 
 
