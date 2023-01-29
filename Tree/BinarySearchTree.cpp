@@ -1,4 +1,8 @@
 // C++ program to build a binary search tree
+/*  Program can create a binary tree, insert new nodes at relevant positions, 
+*   traverse the tree to search for existence of nodes
+*   delete nodes and shift the adjacent/child nodes accordingly
+*/
 // Code by Aadith Sukumar (https://github.com/aadi1011)
 
 #include <iostream>
