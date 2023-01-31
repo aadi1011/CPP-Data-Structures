@@ -4,6 +4,16 @@
 #include <iostream>
 using namespace std;
 
+// Structure of a node
+struct Node
+{
+    int data;
+    struct Node *left;
+    struct Node *right;
+    int thread;
+};
+struct Node *root = NULL;
+
 //Main function
 int main()
 {
