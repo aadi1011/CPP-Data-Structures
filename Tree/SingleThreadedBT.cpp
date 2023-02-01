@@ -1,4 +1,5 @@
 // C++ program to build a single threaded binary tree
+/* Includes function to create, insert, traverse, delete tree*/
 // Code by Aadith Sukumar (https://www.github.com/aadi1011)
 
 #include <iostream>
@@ -13,6 +14,17 @@ struct Node
     int thread;
 };
 struct Node *root = NULL;
+
+// Function for preorder traversal
+void preorder(struct Node *root)
+{
+    if (root == NULL)
+        return;
+    
+    cout << root->data << " ";
+    preorder(root->left);
+    preorder(root->right);
+}
 
 //Main function
 int main()
