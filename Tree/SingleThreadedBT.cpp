@@ -1,4 +1,5 @@
 // C++ program to build a single threaded binary tree
+/* Includes function to create, insert, traverse, delete tree*/
 // Code by Aadith Sukumar (https://www.github.com/aadi1011)
 
 #include <iostream>
