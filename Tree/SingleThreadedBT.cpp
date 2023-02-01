@@ -14,6 +14,17 @@ struct Node
 };
 struct Node *root = NULL;
 
+// Function for preorder traversal
+void preorder(struct Node *root)
+{
+    if (root == NULL)
+        return;
+    
+    cout << root->data << " ";
+    preorder(root->left);
+    preorder(root->right);
+}
+
 //Main function
 int main()
 {
