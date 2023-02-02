@@ -41,7 +41,16 @@ void insert()
     newnode->left = NULL;
     newnode->right = NULL;
     newnode->thread = 0;
-
+    // If tree is empty
+    if (root == NULL)
+    {
+        root = temp;
+        root->data = data;
+        root->left = NULL;
+        root->right = NULL;
+        root->thread = 0;
+        cout << "ROOT: " << root->data << endl << "Address: " << &root << endl;
+    }
 
 //Main function
 int main()
