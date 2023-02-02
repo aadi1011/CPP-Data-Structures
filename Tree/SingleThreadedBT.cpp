@@ -26,6 +26,23 @@ void preorder(struct Node *root)
     preorder(root->right);
 }
 
+// Function to insert in tree
+void insert()
+{
+    int data;
+    cout << "Enter data to insert: ";
+    cin >> data;
+    
+    struct Node *temp = root;
+    temp = (struct Node *)malloc(sizeof(struct Node));
+    struct Node *newnode = NULL;
+    newnode = (struct Node *)malloc(sizeof(struct Node));
+    newnode->data = data;
+    newnode->left = NULL;
+    newnode->right = NULL;
+    newnode->thread = 0;
+
+
 //Main function
 int main()
 {
