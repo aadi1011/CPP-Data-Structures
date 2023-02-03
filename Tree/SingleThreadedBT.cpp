@@ -19,8 +19,9 @@ struct Node *root = NULL;
 void preorder(struct Node *root)
 {
     if (root == NULL)
-        return;
+        return; 
     
+    //printing the output
     cout << root->data << " ";
     preorder(root->left);
     preorder(root->right);
@@ -51,6 +52,8 @@ void insert()
         root->thread = 0;
         cout << "ROOT: " << root->data << endl << "Address: " << &root << endl;
     }
+
+
 
 //Main function
 int main()
