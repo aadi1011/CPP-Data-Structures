@@ -52,7 +52,23 @@ void insert()
         root->thread = 0;
         cout << "ROOT: " << root->data << endl << "Address: " << &root << endl;
     }
-
+    else
+    {
+        temp = root;
+        while (temp != NULL)
+        {
+            if (data < temp->data)
+            {
+                if (temp->left == NULL)
+                {
+                    temp->left = newnode;
+                    cout << "LEFT: " << temp->left->data << endl << "Address: " << &temp->left << endl;
+                    break;
+                }
+                else
+                {
+                    temp = temp->left;
+                }
 
 
 //Main function
