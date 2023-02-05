@@ -60,13 +60,13 @@ void insert()
         {
             if (data < temp->data)
             {
-                if (temp->left == NULL)
+                if (temp->left == NULL) //If left child is NULL (space available for insertion)
                 {
                     temp->left = newnode;
                     cout << "LEFT: " << temp->left->data << endl << "Address: " << &temp->left << endl;
                     break;
                 }
-                else
+                else    //If right child is NULL (space available for insertion)
                 {
                     temp = temp->left;
                 }
