@@ -52,10 +52,11 @@ void insert()
         root->thread = 0;
         cout << "ROOT: " << root->data << endl << "Address: " << &root << endl;
     }
+    // If tree is not empty
     else
     {
         temp = root;
-        while (temp != NULL)
+        while (temp != NULL) // traversing till end
         {
             if (data < temp->data)
             {
