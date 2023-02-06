@@ -11,7 +11,7 @@ struct Node
     int data;
     struct Node *left;
     struct Node *right;
-    int thread;
+    int thread;         //threading
 };
 struct Node *root = NULL;
 
