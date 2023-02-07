@@ -45,6 +45,7 @@ void insert()
     // If tree is empty
     if (root == NULL)
     {
+        //making the element as root - creating the tree in itself
         root = temp;
         root->data = data;
         root->left = NULL;
