@@ -74,7 +74,7 @@ void insert()
             }
             else if (data > temp->data)
             {
-                if (temp->right == NULL)
+                if (temp->right == NULL)    //Moving to Right most NULL Value position
                 {
                     temp->right = newnode;
                     cout << "RIGHT: " << temp->right->data << endl << "Address: " << &temp->right << endl;
