@@ -1,4 +1,4 @@
-// C++ Program to implement Adjacency Matrix
+// C++ Program to implement Adjacency Matrix (code still in test phase. may not work as intended)
 // Code by Aadith Sukumar (https://www.github.com/aadi1011)
 
 #include <iostream>
@@ -29,4 +29,19 @@ void addEdge(int arr[5][5], int src, int dest) //src = source, dest = destinatio
     cout<<"In addEdge function";
     arr[src][dest] = 1;
     //this is an undirected graph, so set[destination][source] to 1
+}
+
+//function to print matrix
+void printAdjMatrix(int arr[5][5])
+{
+    cout<<"In printAdjMatrix function";
+    //cout<<"Matrix is: "<<endl;
+    for (int i = 0; i < V; i++)
+    {
+        for (int j = 0; j < V; j++)
+        {
+            cout << arr[i][j] << " ";
+        }
+        //cout << endl;
+    }
 }
