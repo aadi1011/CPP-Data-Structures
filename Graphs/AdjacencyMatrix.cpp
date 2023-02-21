@@ -22,3 +22,11 @@ void init(int arr[5][5]) // graph initializer function
         }
     }
 }
+
+//add edge and set[source][destination] to 1
+void addEdge(int arr[5][5], int src, int dest) //src = source, dest = destination
+{
+    cout<<"In addEdge function";
+    arr[src][dest] = 1;
+    //this is an undirected graph, so set[destination][source] to 1
+}
