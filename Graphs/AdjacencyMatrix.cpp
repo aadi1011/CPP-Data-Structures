@@ -1,4 +1,4 @@
-// C++ Program to implement Adjacency Matrix
+// C++ Program to implement Adjacency Matrix (code still in test phase. may not work as intended)
 // Code by Aadith Sukumar (https://www.github.com/aadi1011)
 
 #include <iostream>
