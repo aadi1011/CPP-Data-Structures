@@ -45,3 +45,10 @@ void printAdjMatrix(int arr[5][5])
         //cout << endl;
     }
 }
+
+// Delete edge and set[source][destination] to 0
+void deleteEdge(int arr[5][5], int src, int dest)
+{
+    cout<<"In deleteEdge function";
+    arr[src][dest] = 0;
+}
