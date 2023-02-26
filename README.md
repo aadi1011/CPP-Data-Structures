@@ -33,4 +33,6 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
     
 ### Tree
   - Binary Search Tree
+  
+### Graphs
 
