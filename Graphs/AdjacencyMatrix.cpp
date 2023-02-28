@@ -52,3 +52,21 @@ void deleteEdge(int arr[5][5], int src, int dest)
     cout<<"In deleteEdge function";
     arr[src][dest] = 0;
 }
+
+// Driver code
+int main()
+{
+    cout<<"Hello";
+    int adjMatrix[5][5];
+    init(adjMatrix);
+    printAdjMatrix(adjMatrix);
+    addEdge(adjMatrix, 0, 1);
+    addEdge(adjMatrix, 0, 4);
+    addEdge(adjMatrix, 1, 2);
+    addEdge(adjMatrix, 1, 3);
+    addEdge(adjMatrix, 1, 4);
+    addEdge(adjMatrix, 2, 3);
+    addEdge(adjMatrix, 3, 4);
+    printAdjMatrix(adjMatrix);
+    return 0;
+}
