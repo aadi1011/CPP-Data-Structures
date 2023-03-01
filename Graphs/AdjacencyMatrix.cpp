@@ -53,7 +53,7 @@ void deleteEdge(int arr[5][5], int src, int dest)
     arr[src][dest] = 0;
 }
 
-// Driver code
+// Driver code - With predefined function call
 int main()
 {
     cout<<"Hello";
