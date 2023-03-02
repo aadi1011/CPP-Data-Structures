@@ -36,4 +36,5 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
   
 ### Graphs
   - Adjacency Matrix
+  - Join Trees
 
