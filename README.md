@@ -33,8 +33,9 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
     
 ### Tree
   - Binary Search Tree
+  - Single Threaded Binary Search Tree
   
 ### Graphs
   - Adjacency Matrix
-  - Join Trees
+ 
 
