@@ -29,3 +29,9 @@ int minimum_key(int k[], bool mst[])
 // The g[vertices][vertices] is an adjacency matrix that defines the graph for MST
 void dijkstra(int g[V][V], int src)
 {
+    // Create an array of size equal to total number of vertices for storing the MST  
+    int parent[V];
+    // Create k[vertices] array for selecting an edge having minimum weight
+    int k[V];
+    bool mst[V];
+    int i, count, edge, v; //V is the vertex
