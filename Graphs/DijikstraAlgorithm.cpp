@@ -13,4 +13,14 @@ int minimum_key(int k[], bool mst[])
 {
     int minimum = INT_MAX;
     int min, i;
-
+    // Iterate over all vertices to find the vertex with minimum key-value
+    for (i = 0; i < V; i++)
+    {
+        if(mst[i]==0 && k[i]<minimum)
+        {
+            minimum = k[i];
+            min = i;
+        }
+    }
+    return min;
+}
