@@ -24,3 +24,8 @@ int minimum_key(int k[], bool mst[])
     }
     return min;
 }
+
+// Create dijkstra() method for constructing and printing the MST
+// The g[vertices][vertices] is an adjacency matrix that defines the graph for MST
+void dijkstra(int g[V][V], int src)
+{
