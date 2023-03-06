@@ -35,3 +35,11 @@ void dijkstra(int g[V][V], int src)
     int k[V];
     bool mst[V];
     int i, count, edge, v; //V is the vertex
+    for (i=0; i<V;i++)
+    {
+        k[i] = INT_MAX;
+        mst[i] = 0;
+    }
+    k[src] = 0; //It is selected as first vertex
+    parent[src] = -1; //Set first valiue of parent[] array to -1 to make root of MST
+    for (count = 0; count < V-1; count++)
