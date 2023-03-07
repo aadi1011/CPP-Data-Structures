@@ -25,6 +25,7 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
   
 ### Graphs
   - Adjacency Matrix
+  - Dijikstra's Algorithm
  
  ---
 <br><br><br><br>
