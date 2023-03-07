@@ -5,13 +5,13 @@
 A repository of various Data Structures and Algorithms in C++ in efficient menu driven programs.
 
 ## Data Structures:
-### Linked Lists
+### [Linked Lists](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Linked%20Lists)
   - Singly Linked List
   - Doubly Linked List
   - Circular Linked List
   - Stack and Queue Linked Lists
   
-### Sorting
+### [Sorting](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Sorting)
   - Quick Sort
     - First Pivot and Last Pivot
   - Bubble Sort
@@ -19,11 +19,11 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
   - Merge Sort
   - Selection Sort
     
-### Tree
+### [Tree](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Tree)
   - Binary Search Tree
   - Single Threaded Binary Search Tree
   
-### Graphs
+### [Graphs](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Graphs)
   - Adjacency Matrix
   - Dijikstra's Algorithm
  
