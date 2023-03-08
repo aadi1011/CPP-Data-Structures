@@ -13,6 +13,7 @@ int minimum_key(int k[], bool mst[])
 {
     int minimum = INT_MAX;
     int min, i;
+    
     // Iterate over all vertices to find the vertex with minimum key-value
     for (i = 0; i < V; i++)
     {
@@ -31,17 +32,21 @@ void dijkstra(int g[V][V], int src)
 {
     // Create an array of size equal to total number of vertices for storing the MST  
     int parent[V];
+    
     // Create k[vertices] array for selecting an edge having minimum weight
     int k[V];
     bool mst[V];
     int i, count, edge, v; //V is the vertex
+    
     for (i=0; i<V;i++)
     {
         k[i] = INT_MAX;
         mst[i] = 0;
     }
-    k[src] = 0; //It is selected as first vertex
-    parent[src] = -1; //Set first valiue of parent[] array to -1 to make root of MST
+    
+    k[src] = 0;         //It is selected as first vertex
+    parent[src] = -1;   //Set first valiue of parent[] array to -1 to make root of MST
+   
     for (count = 0; count < V-1; count++)
     {
         //Select the vertex having minimum key and that is not added in the MST yet from the set of vertices
@@ -57,3 +62,11 @@ void dijkstra(int g[V][V], int src)
             }
         }
     }
+    
+    // Print the constructed MST
+    cout<<"Edge \tWeight"<<endl;
+    for (i = 1; i < V; i++)
+    {
+        cout<<parent[i]<<" - "<<i<<" \t"<<g[i][parent[i]]<<" \t"<<endl;
+    }
+}
