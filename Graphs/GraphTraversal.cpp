@@ -15,3 +15,15 @@ void BFS(int g[5][5], int start, int n)     // where g is the matrix, start is s
     queue[++rear] = i;                      //adding the first element to the queue
     while (front != rear)                   //queue is not empty
     {
+        i = queue[++front];                 // removing the first element from the queue
+        for (int j = 1; j <= n; j++)
+        {
+            if (g[i][j] == 1 && visited[j] == 0) // if edge not visited
+            {
+                cout << j << " ";     
+                visited[j] = 1;     
+                queue[++rear] = j;              // adding the element to the queue
+            }
+        }
+    }
+}
