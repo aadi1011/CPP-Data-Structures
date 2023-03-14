@@ -26,6 +26,7 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
 ### [Graphs](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Graphs)
   - Adjacency Matrix
   - Dijikstra's Algorithm
+  - Graph Traversals
  
  ---
 <br><br><br><br>
