@@ -37,3 +37,12 @@ void DFS(int g[5][5], int start, int n)     // where g is the matrix, start is s
     {
         cout << i << " ";
         visited[i] = 1;
+        for (int j = 1; j <= n; j++)
+        {
+            if (g[i][j] == 1 && visited[j] == 0) // if edge not visited
+            {
+                DFS(g, j, n);
+            }
+        }
+    }
+}
