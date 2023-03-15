@@ -27,3 +27,13 @@ void BFS(int g[5][5], int start, int n)     // where g is the matrix, start is s
         }
     }
 }
+
+// Depth First Search
+void DFS(int g[5][5], int start, int n)     // where g is the matrix, start is starting node and n is number of vertices
+{
+    static int visited[5] = {0};
+    int i = start;
+    if (visited[i] == 0)
+    {
+        cout << i << " ";
+        visited[i] = 1;
