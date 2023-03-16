@@ -46,3 +46,20 @@ void DFS(int g[5][5], int start, int n)     // where g is the matrix, start is s
         }
     }
 }
+
+// Main function
+int main()
+{
+    int g[5][5] = { {0,1,1,0,0},
+                    {1,0,0,1,1},
+                    {1,0,0,0,1},
+                    {0,1,0,0,1},
+                    {0,1,1,1,0} };
+    cout<<"BFS: ";
+    BFS(g, 1, 5);
+    cout << endl;
+    cout<<"DFS: ";
+    DFS(g, 1, 5);
+    cout << endl;
+    return 0;
+}
