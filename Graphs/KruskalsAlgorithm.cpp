@@ -57,3 +57,10 @@ void kruskal(int g[vertices][vertices])
             }
         }
     }
+    // Print the constructed MST
+    cout<<"Edge \tWeight"<<endl;
+    for (i = 1; i < vertices; i++)
+    {
+        cout<<parent[i]<<" - "<<i<<" \t"<<g[i][parent[i]]<<" \t"<<endl;
+    }
+}
