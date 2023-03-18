@@ -40,3 +40,20 @@ void kruskal(int g[vertices][vertices])
         k[i] = INT_MAX;
         mst[i] = 0;
     }
+    k[0] = 0; //It is selected as first vertex
+    parent[0] = -1; //Set first valiue of parent[] array to -1 to make root of MST
+    for (count = 0; count < vertices-1; count++)
+    {
+        //Select the vertex having minimum key and that is not added in the MST yet from the set of vertices
+        edge = minimum_key(k, mst);
+        mst[edge] = 1;
+        for (v=0; v<vertices; v++)
+        {
+            // Update the key value of adjacent vertices of the selected vertex
+            if(g[edge][v] && mst[v]==0 && g[edge][v]<k[v])
+            {
+                parent[v] = edge;
+                k[v] = g[edge][v];
+            }
+        }
+    }
