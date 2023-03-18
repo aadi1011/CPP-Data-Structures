@@ -25,3 +25,18 @@ int minimum_key(int k[], int mst[])
     return min;
 }
 
+// Create kruskal() method for constructing and printing the MST
+// The g[vertices][vertices] is an adjacency matrix that defines the graph for MST
+void kruskal(int g[vertices][vertices])
+{
+    // Create an array of size equal to total number of vertices for storing the MST  
+    int parent[vertices];
+    // Create k[vertices] array for selecting an edge having minimum weight
+    int k[vertices];
+    int mst[vertices];
+    int i, count, edge, v; //V is the vertex
+    for (i=0; i<vertices;i++)
+    {
+        k[i] = INT_MAX;
+        mst[i] = 0;
+    }
