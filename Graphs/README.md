@@ -15,3 +15,7 @@ The `DijikstraAlgorithm.cpp` file contains an implementation of Dijkstra's short
 The implementation in this file reads in an adjacency list representation of a graph with non-negative edge weights from the standard input. It then runs Dijkstra's algorithm on the graph from a given source node, and prints out the shortest path distances to all other nodes in the graph.
 
 The implementation uses a priority queue to efficiently process the nodes in the order of their shortest distance from the source node. It also uses a vector to keep track of the shortest distances to each node and another vector to keep track of the predecessor of each node on the shortest path.
+
+### GraphTraversal.cpp
+
+### KruskalsAlgorithm.cpp
