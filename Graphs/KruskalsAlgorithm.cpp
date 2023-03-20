@@ -74,6 +74,7 @@ int main()
                                     {0, 3, 0, 0, 7},
                                     {6, 8, 0, 0, 9},
                                     {0, 5, 7, 9, 0}};
+    // Calling function and passing the graph matrix
     kruskal(graph);
     return 0;
 }
