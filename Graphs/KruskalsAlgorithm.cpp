@@ -68,7 +68,7 @@ void kruskal(int g[vertices][vertices])
 // Driver code
 int main()
 {
-    // Create a graph with 5 vertices
+    // Create a graph with 5 vertices - predefined
     int graph[vertices][vertices] = {{0, 2, 0, 6, 0},
                                     {2, 0, 3, 8, 5},
                                     {0, 3, 0, 0, 7},
