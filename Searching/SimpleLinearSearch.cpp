@@ -23,5 +23,18 @@ void LinearSearch(int arr[100], int total)
     {
         cout<<"Element does not exist!\n";
     }
-    
+}
+
+int main()
+{
+    int arr[100]{},total,key;
+    cout<<"Enter size of array: ";
+    cin>>total;
+    cout<<"Enter the array:\n";
+    for (int i = 0; i < total; i++)
+    {
+        cin>>arr[i];
+    }
+    LinearSearch(arr,total);
+    return 0;
 }
