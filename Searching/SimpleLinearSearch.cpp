@@ -3,3 +3,9 @@
 
 #include<iostream>
 using namespace std;
+
+void LinearSearch(int arr[100], int total)
+{
+    int key,check=0;
+    cout<<"Enter element to search: ";
+    cin>>key;
