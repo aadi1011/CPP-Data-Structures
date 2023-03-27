@@ -9,3 +9,12 @@ void LinearSearch(int arr[100], int total)
     int key,check=0;
     cout<<"Enter element to search: ";
     cin>>key;
+
+    for(int i = 0; i<total; i++)
+    {
+        if (arr[i]==key)
+        {
+           cout<<"Element exists!\n";
+           check=1;
+           break;
+        }
