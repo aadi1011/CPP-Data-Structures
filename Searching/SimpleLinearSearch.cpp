@@ -18,3 +18,10 @@ void LinearSearch(int arr[100], int total)
            check=1;
            break;
         }
+    }
+    if (check==0)
+    {
+        cout<<"Element does not exist!\n";
+    }
+    
+}
