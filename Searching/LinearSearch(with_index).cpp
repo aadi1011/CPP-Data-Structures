@@ -6,3 +6,18 @@ int main()
     cout << "Enter the Size for Array: ";
     cin >> total;
     cout << "Enter " << total << " Elements: " << endl;
+    for (i = 0; i < total; i++) 
+    {
+        cin >> arr[i];
+    }
+    cout << "\nEnter the Number to Search: ";
+    cin >> num;
+    for (i = 0; i < total; i++)
+    {
+        if (arr[i] == num)
+        {
+            arrTemp[j] = i;
+            j++;
+            chk++;
+        }
+    }
