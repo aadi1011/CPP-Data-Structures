@@ -21,3 +21,10 @@ int main()
             chk++;
         }
     }
+    if (chk > 0)
+    {
+        cout << "\nNumber Found at Index No. ";
+        total = chk;
+        for (i = 0; i < total; i++)
+            cout << arrTemp[i] << ", ";
+    }
