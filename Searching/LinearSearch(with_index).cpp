@@ -28,3 +28,8 @@ int main()
         for (i = 0; i < total; i++)
             cout << arrTemp[i] << ", ";
     }
+    else
+        cout << "\nNumber doesn't exist";
+    cout << endl;
+    return 0;
+}
