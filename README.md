@@ -10,6 +10,10 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
   - Doubly Linked List
   - Circular Linked List
   - Stack and Queue Linked Lists
+
+### [Searching](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Searching)
+  - Linear Search
+  - Binary Search
   
 ### [Sorting](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Sorting)
   - Quick Sort
@@ -18,7 +22,7 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
   - Insertion Sort
   - Merge Sort
   - Selection Sort
-    
+
 ### [Tree](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Tree)
   - Binary Search Tree
   - Single Threaded Binary Search Tree
@@ -29,6 +33,7 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
   - Dijikstra's Algorithm
   - Kruskals Algorithm
   - Prims Algorithm
+
  
  ---
 <br><br><br><br>
