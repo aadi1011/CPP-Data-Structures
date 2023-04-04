@@ -20,3 +20,20 @@ int binarySearchIter(int arr[], int n, int num)
 	}
 	return -1;
 }
+
+int BinarySearchRecur(int arr[], int num, int start, int end)
+{
+	int mid;
+	if (start > end) {
+		cout << "Number is not found";
+		return 0;
+	}
+	else {
+		mid = (start + end) / 2;
+		if (arr[mid] == num) {
+			cout << "Number is found at " << mid << " index \n";
+			return 0;
+		}
+		else if (num > arr[mid]) {
+			BinarySearchRecur(arr, num, mid + 1, end);
+		}
