@@ -16,7 +16,7 @@ struct Node
     struct Node *left;
     struct Node *right;
 };
-struct Node *root = NULL;
+struct Node *root = NULL; // init null root node
 
 //Function to insert in tree
 void insert()
