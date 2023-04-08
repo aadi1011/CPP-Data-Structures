@@ -12,7 +12,7 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
   - Stack and Queue Linked Lists
 
 ### [Searching](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Searching)
-  - Linear Search
+  - Linear Search (with and withot index)
   - Binary Search
   
 ### [Sorting](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Sorting)
