@@ -36,7 +36,7 @@ A repository of various Data Structures and Algorithms in C++ in efficient menu 
 
  
  ---
-<br><br><br><br>
+<br>
     Features present in LinkedLists:
     <ul>
     <li>Traversing the list</li>
