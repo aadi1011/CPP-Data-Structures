@@ -1,4 +1,4 @@
-# Data Structures
+# Data Structures in C++
 
 <b>Repository by <a href="https://www.github.com/aadi1011">Aadith Sukumar</a>. Contact for reuse and more.</b>
 
