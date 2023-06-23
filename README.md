@@ -12,7 +12,7 @@ Data Structures are a way to organize and store data in a computer so that it ca
 ### [Linked Lists](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Linked%20Lists)
   - Singly Linked List
   - Doubly Linked List
-  - Circular Linked Listj
+  - Circular Linked Lists
   - Stack and Queue Linked Lists
 
 ### [Searching](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Searching)
