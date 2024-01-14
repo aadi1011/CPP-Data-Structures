@@ -55,6 +55,9 @@ To contribute to this project, please follow these steps:
 
 Please ensure that your code follows our coding standards and that all tests pass before submitting a pull request. 
 
+You can add in more data structure codes to this repository
+
+
 <!-- ### Code of Conduct
 
 We expect all contributors to adhere to our code of conduct, which can be found in the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file.
