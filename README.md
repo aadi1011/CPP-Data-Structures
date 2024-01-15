@@ -6,11 +6,10 @@
 
    
 
-A repository of various important Data Structures and Algorithms in C++ in efficient menu driven programs. 
+A repository of various important Data Structures and Algorithms (DSA) in C++ in efficient menu driven programs. 
 
 Data Structures are a way to organize and store data in a computer so that it can be accessed and used efficiently. They provide a way to manage and manipulate data in an organized manner, allowing us to perform operations such as search, insertion, deletion, sorting, and more. Some common examples of data structures include arrays, linked lists, stacks, queues, trees, and graphs. By using the appropriate data structure for a specific problem, we can optimize the performance of our algorithms and make our programs more efficient & effective.  
  
-
 
 ## Data Structures:
 ### [Linked Lists](https://github.com/aadi1011/CPP-Data-Structures/tree/main/Linked%20Lists)
