@@ -1,4 +1,4 @@
-  # Data Structures in C++
+# Data Structures in C++
 
 <a href="https://github.com/aadi1011/CPP-Data-Structures"><img alt="Files" src="https://img.shields.io/badge/Files-22-blue"></a>
 
@@ -55,11 +55,3 @@ To contribute to this project, please follow these steps:
 Please ensure that your code follows our coding standards and that all tests pass before submitting a pull request. 
 
 You can add in more data structure codes to this repository
-
-
-<!-- ### Code of Conduct
-
-We expect all contributors to adhere to our code of conduct, which can be found in the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) file.
-
-Thank you again for contributing to our project!
--->
