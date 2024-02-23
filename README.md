@@ -1,4 +1,4 @@
-# Data Structures in C++
+# Basic Data Structures Programs in C++
 
 <a href="https://github.com/aadi1011/CPP-Data-Structures"><img alt="Files" src="https://img.shields.io/badge/Files-22-blue"></a>
 
